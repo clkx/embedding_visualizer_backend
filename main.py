@@ -52,6 +52,10 @@ def find_all():
 
     return json.loads(json_util.dumps(results))
 
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
 
 if __name__ == "__main__":
     uvicorn.run(app, port=8080, log_level="info")
