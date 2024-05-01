@@ -6,6 +6,7 @@ from bson import json_util
 import json
 from sklearn.decomposition import PCA
 from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 
 load_dotenv()
 app = FastAPI()
@@ -53,6 +54,5 @@ def find_all():
 
 
 if __name__ == "__main__":
-    import uvicorn
     uvicorn.run(app, port=8080, log_level="info")
 
