@@ -15,7 +15,7 @@ origins = [
     "http://localhost",
     "http://localhost:8080",
     "http://localhost:5173",
-    "https://embedding-visualizer-frontend-jwtetf7fr-clkx1s-projects.vercel.app"
+    "https://embedding-visualizer.vercel.app"
 ]
 
 app.add_middleware(
